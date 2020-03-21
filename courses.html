@@ -15,21 +15,21 @@
     </ul>
     <center>
         <div>
-            <button>Bold</button>
-            <button>Underline</button>
-            <button>Italic</button>
-            <select name="" id="">
-                <option value="">20px</option>
-                <option value="">40px</option>
-                <option value="">60px</option>
+            <button onclick="bold()">Bold</button>
+            <button onclick="underline()">Underline</button>
+            <button onclick="italic()">Italic</button>
+            <select id="hello" onchange="changesize()">
+                <option value="20px">20px</option>
+                <option value="40px">40px</option>
+                <option value="60px">60px</option>
             </select>
-            <select name="" id="">
-                <option value="">Arial</option>
-                <option value="">Candeva</option>
+            <select  id="changefont" onchange="parafont()" >
+                <option value="Arial">Arial</option>
+                <option value="Candeva">Candeva</option>
             </select>
         </div>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea name="" id="text" cols="30" rows="10"></textarea>
     </center>
 </body>
-
+<script src="js/main.js"></script>
 </html>
